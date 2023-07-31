@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="movie.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+</head>
+<body>
+    <div class="main-Heading text-center">
+
+        <h1>Movie Rating</h1>
+  
+    
+        <form class="form-inline justify-content-center" id="new-movie-form">
+            <!-- input for movie title -->
+            <div class="form-group">
+                <label for="title">Movie Title</label>
+                <input type="text" id="title" class="form-control" required>
+            </div>
+            <!-- input for movie rating -->
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <input type="number" id="rating" class="form-control" required min="0" max="10">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary form-control">Submit</button>
+            </div> 
+        </form>
+    </div>
+
+<br>
+
+    <table class="table table-stripped table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Title <i id="title" class="fas fa-sort-down"></i></th>
+                <th scope="col">Rating <i id="rating" class="fas fa-sort-down"></i></th>
+                <th scope="col">Delete</i></th>
+            </tr>
+        </thead>
+
+        <tbody id="movie-table-body">
+            <!-- <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr> -->
+        </tbody>
+    </table>
+
+   
+
+    <!-- js and jQuery scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="movie.js"></script>
+</body>
+</html>

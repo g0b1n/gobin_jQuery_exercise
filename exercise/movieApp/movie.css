@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(213, 255, 254);
+}
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #f3ce13;
+    align-content: center;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+
+}
